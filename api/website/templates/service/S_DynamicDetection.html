@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}影像安防偵測{% endblock %}
+
+{% block content %}
+    <!-- 頁面抬頭Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">影像安防偵測</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('views.index') }}">首頁</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('views.service') }}">產品與服務</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">影像安防偵測</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- 頁面抬頭End -->    
+
+    
+    <!-- ***** 產品展示start***** -->
+    <div>
+        <!-- Youtube影片 -->
+        <div style="aspect-ratio: 16 / 9; width: 70%; margin-left: 15%; margin-right: 15%;"> <!-- 使用 style 屬性來設定影片容器的寬高比和寬度 -->
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1VGR0jPledw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br>
+
+        <!-- 大綱開場start -->
+        <div style="margin-left: 15%; margin-right: 15%;">
+            <p>iSeinTech開發的移動偵測系統，是一款可以搭配監視器、視訊攝影機、或手機的<b>影像平台</b>。</p>
+            <p>我們瞭解您的家裡或工作地點(包括工廠、辦公室、農地、出入口...)，可能會有未經您同意的人進出，可能造成您的安全與財務上的隱患。我們將您身邊輕易可取得的鏡頭，整合到統一的平台上，讓您不再煩惱怎麼操作這些科技產品。</p>
+        </div>
+        <!-- 大綱開場end -->
+        <br>
+
+        <!-- 產品特色start -->
+        <div style="margin-left: 15%; margin-right: 15%;">
+            <h3 style="color: brown;">產品特色</h3>
+            <div>
+                <p>您是否需要一個能夠讓您輕鬆管理多個監視器的影音平台？一個能夠支援各種不同的鏡頭裝置，並提供統一的操作介面和一鍵式的使用體驗的影音平台？一個能夠保障您的監視畫面不會被竊取或洩露，確保您的隱私或個資不受侵害的影音平台？</p>
+
+                <p>如果您的答案是肯定的，那麼您一定要試試我們的產品！</p>
+                <p>我們是一間專業的影音平台軟體開發商，我們的產品有以下幾大優勢：</p>
+                <ol>
+                    <li><b>兼容性強：</b><br> 
+                        無論您使用什麼品牌或型號的監視器、視訊攝影機或手機等有鏡頭的硬體裝置，我們都可以幫您將它們連接到我們的平台上，讓您可以隨時隨地查看您想要監視的區域。</li>
+                    <li><b>操作簡便：</b><br>
+                        我們的平台提供了一個簡潔明瞭的操作介面，讓您可以輕鬆地切換不同的監視畫面，調整鏡頭設定，或是進行錄影、截圖等功能。您只需要按一下按鈕，就可以完成您想要做的事情。</li>
+                    <li><b>安全可靠：</b><br>
+                        我們的平台採用了最先進的加密技術，確保您的監視畫面只有您自己可以看到，不會被任何第三方竊取或洩露。您可以放心地使用我們的平台，不用擔心您的隱私或個資受到侵害。</li>
+                    <li><b>功能豐富：</b><br>
+                        除了上述的基本功能外，我們的平台還提供了一些其他的特色功能，例如：
+                        <ul>
+                            <li><b>夜視紅外線：</b> 可以在夜間或光線昏暗的環境中，清晰地拍攝監視畫面，提高安全防護的效果。</li>
+                            <li><b>區域偵測：</b> 可以針對重要區域進行感應設置，當有異物或人員進入時，即時通知使用者或發出警報。</li>
+                            <li><b>雙向語音通話：</b> 可以透過內建的麥克風和喇叭，與監視區域內的人員進行語音對話，適合用於照護嬰兒或老人。</li>
+                            <li><b>本地儲存：</b> 可以將監視畫面上傳到本地的伺服器平台，節省租用網路空間的費用，並提供更高的安全性和便利性。</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>我們相信，我們的產品是市面上最優秀、最方便、最安全、最功能豐富的影音平台之一。如果您對我們的產品感興趣，請立即聯絡我們，我們將為您提供更多詳細資訊和免費試用服務。</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!-- ***** 產品展示end***** -->
+
+{% endblock %}

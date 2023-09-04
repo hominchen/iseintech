@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block title %}光學盤點系統{% endblock %}
+
+{% block content %}
+    <!-- 頁面抬頭Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">光學盤點系統</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('views.index') }}">首頁</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('views.service') }}">產品與服務</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">光學盤點系統</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- 頁面抬頭End -->    
+
+
+    <!-- 產品展示start -->
+    <div>
+        <!-- 01.開放環境 -->
+        <div>
+            <div style="margin-left: 15%; margin-right: 15%;">
+                <h2 style="color: brown;">01.開放環境</h2>
+                <p style="color: darkgrey;">科技影像辨識，讓您一眼看清所有車流！</p>
+            </div>
+            <!-- Youtube影片 -->
+            <div style="aspect-ratio: 16 / 9; width: 70%; margin-left: 15%; margin-right: 15%;"> <!-- 使用 style 屬性來設定影片容器的寬高比和寬度 -->
+                <iframe src="https://www.youtube.com/embed/ERSKHGsUi_E?si=jOce02KE48uj3ZEc" title="車輛自動計數系統" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%; height: 100%;"> <!-- 使用 style 屬性來設定影片的寬度和高度 -->
+                </iframe>
+            </div>
+            <br>
+
+            <!-- 大綱開場start -->
+            <div style="margin-left: 15%; margin-right: 15%;">
+                <p>iSeinTech車輛自動計數系統，讓您一眼看清所有車流！</p>
+                <p>我們採用全球知名的YOLO技術，為您開發車輛自動計數系統，可以幫您快速準確地統計任何場景中的車輛數量。無論是停車場、路口、高速公路，或是其他有影像計數需求的地方，我們的系統都可以為您提供最佳的解決方案。</p>
+            </div>
+            <!-- 大綱開場end -->
+            <br>
+
+            <!-- 產品特色start -->
+            <div style="margin-left: 15%; margin-right: 15%;">
+                <h4>產品特色</h4>
+                <div>
+                    <p>我們的系統具有以下優勢：</p>
+                    <h6>(1) 高效率</h6>
+                    <p>YOLO是一種基於深度學習的物件辨識演算法，可以在單張影像上同時進行多個物件的偵測與分類。它比傳統的物件辨識方法更快更準確，可以達到每秒60幀的處理速度。</p>
+                    
+                    <h6>(2) 高準確度</h6>
+                    <p>我們的系統不僅可以偵測出車輛的位置和數量，還可以辨識出車輛的類型和顏色。這樣可以幫助您更細緻地分析車流狀況和客戶特徵，提升您的服務品質和營收效益。</p>
+
+                    <h6>(3) 高彈性</h6>
+                    <p>我們的系統可以適應不同的場景和需求，只要有攝影機或其他影像來源，就可以進行車輛自動計數。您可以根據您的實際情況，選擇安裝在固定位置或移動設備上，或是使用雲端服務或本地端運算。</p>
+                </div>
+            </div>
+            <!-- 產品特色end -->
+            <br>
+        </div>
+
+        <!-- 02.即時遠端查看 -->
+        <div>
+            <div style="margin-left: 15%; margin-right: 15%;">
+                <h2 style="color: brown;">02.即時遠端查看</h2>
+                <p style="color: darkgrey;">讓在遠方的你，可1秒得到正確的數量。你還要猶豫多久？</p>
+            </div>
+            <!-- Youtube影片 -->
+            <div style="aspect-ratio: 16 / 9; width: 70%; margin-left: 15%; margin-right: 15%;"> <!-- 使用 style 屬性來設定影片容器的寬高比和寬度 -->
+                <iframe width="320" height="560" src="https://www.youtube.com/embed/bUgBoxb8UTc" title="影像自動計數 on Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <br>
+
+            <!-- 大綱開場start -->
+            <div style="margin-left: 15%; margin-right: 15%;">
+                <p>iSeinTech物件數量統計系統，讓您不再為物料盤點煩惱！</p>
+                <p>使用opencv偵測不同物件的輪廓與面積的數量統計系統，可以幫您節省盤點不同物件的時間，提高您的工作效率和準確度。我們的系統適用於各種物料管理的場合，無論是倉庫、工廠、辦公室，或是其他需要盤點物件的地方，我們的系統都可以為您提供最佳的解決方案。</p>
+            </div>
+            <!-- 大綱開場end -->
+            <br>
+
+            <!-- 產品特色start -->
+            <div style="margin-left: 15%; margin-right: 15%;">
+                <h4>產品特色</h4>
+                <div>
+                    <p>我們的系統具有以下優勢：</p>
+                    <h6>(1) 高靈敏度</h6>
+                    <p>opencv是一種開源的電腦視覺庫，可以在各種環境下進行高品質的影像處理。它可以準確地偵測出不同物件的輪廓和面積，並將其分類和計數。它可以處理各種大小和形狀的物件，無論是圓形、方形、三角形，或是其他不規則的形狀，都可以被辨識出來。</p>
+                    
+                    <h6>(2) 高便利性</h6>
+                    <p>我們的系統可以透過瀏覽器(web)讓手機與電腦可遠端查看。您可以隨時隨地透過網路連接到我們的系統，查看您所需的盤點資訊。您也可以將盤點結果下載或列印出來，方便您進行後續的管理和分析。</p>
+
+                    <h6>(3) 高客製化</h6>
+                    <p>我們的系統可以根據您的需求進行客製化設定。您可以選擇要盤點哪些類型和顏色的物件，以及要顯示哪些數據和圖表。您也可以設定盤點的時間和頻率，讓我們的系統自動為您執行盤點任務。</p>
+                </div>
+            </div>
+            <!-- 產品特色end -->
+            <br>
+
+        </div>
+
+        
+
+    </div>
+
+    <!-- 產品展示End -->
+    
+{% endblock %}

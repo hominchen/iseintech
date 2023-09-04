@@ -1,0 +1,449 @@
+{% extends 'base.html' %}
+
+{% block title %}iSeinTech祁知科技 - 影像辨識的專家{% endblock %}
+
+{% block content %}
+    <!-- 輪播Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="static/img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">歡迎來到iSeinTech</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">最佳的影像與資訊服務</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">我們提供你生意上的必要協助，讓我們成為你成功的助力與最佳夥伴。</p>
+                                <a href="{{ url_for('views.service') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">瞭解產品</a>
+                                <a href="{{ url_for('views.contact') }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">產品諮詢</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="static/img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">獨特的企業資訊系統</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">將資訊給到正確的人</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">不需要變更系統，只滿足你的需求；不需要事事關心，只追蹤你所關注的。</p>
+                                <a href="{{ url_for('views.service') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">瞭解產品</a>
+                                <a href="{{ url_for('views.contact') }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">產品諮詢</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="static/img/carousel-3.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">操作簡便的影像系統</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">讓手機成為最佳的工具</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">我們協助您將淘汰的舊手機，成為您最強大的生產力工具。</p>
+                                <a href="{{ url_for('views.service') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">瞭解產品</a>
+                                <a href="{{ url_for('views.contact') }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">產品諮詢</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 輪播End -->
+
+    <!-- 網頁內容 -->
+    <div>
+        <!-- 我們的信念Start -->
+        <div class="container-xxl py-5">
+            <!-- 圖片皆由SD生成 -->
+            <div class="container">
+                <div class="row g-5">
+                    <h1>我們的信念</h1>
+                    <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h1 class="display-1 text-light mb-0">01</h1>
+                            <img class="img-fluid" src="static/img/about/belief-1.jpg" width="80">
+                        </div>
+                        <h5>產品領導者</h5>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h1 class="display-1 text-light mb-0">02</h1>
+                            <img class="img-fluid" src="static/img/about/belief-2.jpg" width="80">
+                        </div>
+                        <h5>務實的方案</h5>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h1 class="display-1 text-light mb-0">03</h1>
+                            <img class="img-fluid" src="static/img/about/belief-3.jpg" width="80">
+                        </div>
+                        <h5>簡潔的設計</h5>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h1 class="display-1 text-light mb-0">04</h1>
+                            <img class="img-fluid" src="static/img/about/belief-4.jpg" width="80">
+                        </div>
+                        <h5>影像自動化</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 我們的信念Start -->
+
+
+
+        <!-- 關於Start -->
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container about px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="static/img/about.jpg" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 pe-lg-0">
+                            <div class="section-title text-start">
+                                <h1 class="display-5 mb-4">關於我們</h1>
+                            </div>
+                            <!-- <p class="mb-4 pb-2"> -->
+
+                            <p>祁祁知科技成立於2015年6月，祁知科技初始成員來自工研院、資策會、研華科技等，並以「新產品開發」暨「影像自動化設備開發」為主要業務。針對日常工作與生活中無價值的重複性動作，提供自動化與數位化解決方案。</p>
+                            <p>我們定位為專業的軟體開發公司，致力於為中小型製造業提供創新的企業資訊系統。我們的產品包括(1)自動光學缺陷檢測系統、(2)影像數量盤點系統、(3)影像安防系統、(4)AI趨勢預測系統等，能夠幫助客戶提高生產效率、降低成本、增加競爭力。</p>
+                            <p>我們的產品不需要高額的預算導入，也不需要客戶有強大的資訊數位化能力，只要您有少量多樣的需求，以及願意嘗試新技術的心態，我們就能為您量身打造最適合您的解決方案。我們是您數位轉型的最佳夥伴！</p>
+                            <div class="row g-4 mb-4 pb-2">
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                            <i class="fa fa-users fa-2x text-primary"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h2 class="text-primary mb-1" data-toggle="counter-up">362</h2>
+                                            <p class="fw-medium mb-0">滿意的顧客</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                            <i class="fa fa-check fa-2x text-primary"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h2 class="text-primary mb-1" data-toggle="counter-up">13</h2>
+                                            <p class="fw-medium mb-0">完成的委託</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a href="" class="btn btn-primary py-3 px-5">Explore More</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 關於End -->
+
+
+        <!-- 產品Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-5 mb-5">我們的產品線</h1>
+                </div>
+                <div class="row g-4">
+                    <!-- 網站設計 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="static/img/service-1.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">網站設計</h4>
+                                <p>我們提供靜態與動態的網站設計服務，並可根據您的需求與預算，為您選擇最適當的方式開啟您的生意。</p>
+                                <a class="fw-medium" href="S_WebDesign.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 企業資訊系統 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="static/img/service-2.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">企業資訊系統</h4>
+                                <p>資訊的傳遞與整合，是企業運行的關鍵。我們提供在ERP前端的設計服務，讓您花小錢來開始數位轉型。</p>
+                                <a class="fw-medium" href="S_ERP.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 影像安防偵測 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="static/img/service-3.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">影像安防偵測</h4>
+                                <p>居家或營業場所的安全，是您財產的根基。我們提供專業的影像偵測技術與平台，保障您生命與財產的安全。</p>
+                                <a class="fw-medium" href="S_DynamicDetection.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 缺陷檢測系統AOI -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="static/img/service-4.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">缺陷檢測系統AOI</h4>
+                                <p>來料與出貨的品質，決定產品最後的利潤。我們提供低價快速的缺陷檢測方式，協助您取得更好的品質。</p>
+                                <a class="fw-medium" href="S_AOI.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 影像盤點系統 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="static/img/service-5.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">影像盤點系統</h4>
+                                <p>數量的清點，是每件事的開始與結束。我們開發出先進的影像辨識系統，讓您在任何地方，自動幫您統計所有的數量。</p>
+                                <a class="fw-medium" href="S_OpticalInventory.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI預測系統 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="static/img/service-6.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">AI預測系統</h4>
+                                <p>分析與預測，是聰明的您優於其他人的地方。我們提供標準化的AI模型，讓您輕鬆的進行機器學習與預測。</p>
+                                <a class="fw-medium" href="S_AIPrediction.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <!-- 產品End -->
+
+
+        <!-- 為何選擇我們Start -->
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container feature px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 ps-lg-0">
+                            <div class="section-title text-start">
+                                <h1 class="display-5 mb-4">為什麼選擇祁知</h1>
+                            </div>
+                            <p class="mb-4 pb-2">祁知科技擁有超過10年的製造業與電子產業經驗，深刻瞭解行業中老闆與員工對自動化與企業管理的需求。 祁知科技不用浮誇的語言，只用有效的方法與產品，與所有人達成互利共贏。</p>
+                            <div class="row g-4">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                            <i class="fa fa-check fa-2x text-primary"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="mb-2">品質</p>
+                                            <h5 class="mb-0">Services</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                            <i class="fa fa-user-check fa-2x text-primary"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="mb-2">創造力</p>
+                                            <h5 class="mb-0">Designers</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                            <i class="fa fa-drafting-compass fa-2x text-primary"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="mb-2">開放</p>
+                                            <h5 class="mb-0">Consultation</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                            <i class="fa fa-headphones fa-2x text-primary"></i>
+                                        </div>
+                                        <div class="ms-4">
+                                            <p class="mb-2">客戶</p>
+                                            <h5 class="mb-0">Support</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="static/img/feature.jpg" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 為何選擇我們End -->
+
+
+        <!-- 團隊Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-5 mb-5">團隊成員</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <div class="overflow-hidden position-relative">
+                                <img class="img-fluid" src="static/img/team-1.jpg" alt="">
+                            </div>
+                            <div class="text-center border border-5 border-light border-top-0 p-4">
+                                <h5 class="mb-0">Luke</h5>
+                                <small>產品設計</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <div class="overflow-hidden position-relative">
+                                <img class="img-fluid" src="static/img/team-2.jpg" alt="">
+                            </div>
+                            <div class="text-center border border-5 border-light border-top-0 p-4">
+                                <h5 class="mb-0">Allen</h5>
+                                <small>系統開發</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <div class="overflow-hidden position-relative">
+                                <img class="img-fluid" src="static/img/team-3.jpg" alt="">
+                            </div>
+                            <div class="text-center border border-5 border-light border-top-0 p-4">
+                                <h5 class="mb-0">Simon</h5>
+                                <small>業務推廣</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <div class="overflow-hidden position-relative">
+                                <img class="img-fluid" src="static/img/team-4.jpg" alt="">
+                                <div class="team-social">
+                                    <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center border border-5 border-light border-top-0 p-4">
+                                <h5 class="mb-0">Judy</h5>
+                                <small>行政管理</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 團隊End -->
+
+
+        <!-- 洽詢Start -->
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container quote px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="static/img/quote.jpg" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 pe-lg-0">
+                            <div class="section-title text-start">
+                                <h1 class="display-5 mb-4">產品洽詢</h1>
+                            </div>
+                            <p class="mb-4 pb-2">
+                                <div>聯絡： Luke</div>
+                                <div>電話： 0980-589635</div>
+                                <div>信箱： iseintech.service@gmail.com</div>
+                                <div><a href="https://line.me/R/ti/p/%40ezp7681g"><img height="36" border="0" alt="加入好友" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"></a></div>                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 洽詢End --> 
+
+
+
+        <!-- Testimonial Start -->
+        <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-5 mb-5">Testimonial</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
+                        <div class="testimonial-text text-center p-4">
+                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                            <h5 class="mb-1">Client Name</h5>
+                            <span class="fst-italic">Profession</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
+                        <div class="testimonial-text text-center p-4">
+                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                            <h5 class="mb-1">Client Name</h5>
+                            <span class="fst-italic">Profession</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
+                        <div class="testimonial-text text-center p-4">
+                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                            <h5 class="mb-1">Client Name</h5>
+                            <span class="fst-italic">Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Testimonial End -->
+    </div>
+
+{% endblock %}

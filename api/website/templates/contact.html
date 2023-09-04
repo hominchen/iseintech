@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}聯絡我們{% endblock %}
+
+{% block content %}
+    <!-- 頁面抬頭 Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">聯絡我們</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('views.index') }}">首頁</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">聯絡我們</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- 頁面抬頭 End -->
+
+    <!-- 聯絡 Start -->
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
+        <div class="container contact px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">聯絡我們</h1>
+                        </div>
+                        <p class="mb-4 pb-2">
+                            <div>聯絡： Luke</div>
+                            <div>電話： 0980-589635</div>
+                            <div>信箱： iseintech.service@gmail.com</div>
+                            <div><a href="https://line.me/R/ti/p/%40ezp7681g"><img height="36" border="0" alt="加入好友" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"></a></div>                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <p align="center"><b>台中辦公室</b></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.275654119125!2d120.69451951129489!3d24.16206357830164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917e253acbe4b%3A0xc67334533f739372!2zNDA25Y-w5Lit5biC5YyX5bGv5Y2A5YyX6I-v6KGXMTU26Jmf!5e0!3m2!1szh-TW!2stw!4v1691804305287!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 聯絡 End -->
+
+{% endblock %}

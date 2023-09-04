@@ -1,0 +1,253 @@
+{% extends 'base.html' %}
+
+{% block title %}企業資訊系統{% endblock %}
+
+{% block content %}
+    <!-- 頁面抬頭Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">企業資訊系統</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('views.index') }}">首頁</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('views.service') }}">產品與服務</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">企業資訊系統</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- 頁面抬頭End -->    
+
+
+    <!-- ***** 產品展示start***** -->
+    <div>
+        <!-- Youtube影片 -->
+        <div style="aspect-ratio: 16 / 9; width: 70%; margin-left: 15%; margin-right: 15%;"> <!-- 使用 style 屬性來設定影片容器的寬高比和寬度 -->
+            <iframe src="https://www.youtube.com/embed/1mREF_xDlXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%; height: 100%;"> <!-- 使用 style 屬性來設定影片的寬度和高度 -->
+            </iframe>
+        </div>
+        <br>
+
+
+        <!-- 大綱開場start -->
+        <div style="margin-left: 15%; margin-right: 15%;">
+            <p>iSeinTech開發的資訊系統，是一款建立在ERP前端的 <b>資訊中台</b>。</p>
+            <p>我們瞭解冗長的作業流程與僵化的資訊系統，會對您的業務帶來的難以想像的傷害。因此我們以企業中的BU事業群或產品專案為營運單位，在確保財務與業務資訊的一致性和正確性下，協助每個產品經理或專案主管，將團隊帶領出自己獨特的商業風格。</p>
+        </div>
+        <!-- 大綱開場end -->
+        <br>
+
+
+        <!-- 產品特色start -->
+        <div style="margin-left: 15%; margin-right: 15%;">
+            <h3 style="color: brown;">01. 產品特色</h3>
+            <div>
+                <p>iSeinTech的資訊系統有以下幾個特色：</p>
+                <h6>(1) 私域數據</h6>
+                <p>隨著大模型AI的發展，所有人都開始重視數據的價值。以產品或專案為單位建立私域數據，可以保護產品與專案的機密性和安全性，並提升數據的效率和品質，讓您的產品與專案更容易管理和協調。</p>
+                <p>例如您正在開發一款新的聯網手錶，您可以選擇某些人可以存取和修改手錶的設計、功能、測試等，並確保只有專案成員，能看到最新和最準確的資料。這樣可以避免手錶的細節被競爭對手或其他無關人士洩露或竊取，也可以避免因為資料不同步而造成的混亂和錯誤。</p>
+                
+                <h6>(2) 主動追蹤</h6>
+                <p>我們知道您的<b>注意力</b>是有限的，因此我們開發了議題追蹤技術，讓您可以決定追蹤您感興趣的議題或專案資訊，並在您的電子郵件或手機上即時收到更新通知。</p>
+                <p>可以選擇「主動追蹤」的好處是很多的，最直觀的就是信箱不會再有冗於的郵件，您可以取回您的注意力，並放在需要的地方。例如您的正在製造一批新的聯網手錶，您可以使用追蹤功能，來選擇是否關生產或庫存等數據，並在有新的資訊被更新時，讓您第一時間收到通知。這樣可以讓您及時發現和解決任何問題或機會，並根據數據來制定更有效的策略和行動。</p>
+
+                <h6>(3) 可擴充性</h6>
+                <p>為使您有更豐富的功能擴充</p>
+                <ol>
+                    <li><b>水平擴充性：</b><br> 能夠增加伺服器或節點數量，提升處理能力和負載平衡。 可以用 WSGI 伺服器或負載平衡器來實現水平擴充性。</li>
+                    <li><b>垂直擴充性：</b><br> 能夠增加單一伺服器或節點的運算資源，例如CPU、記憶體、硬碟等。垂直擴充性取決於硬體規格和配置，以及程式效能優化。</li>
+                    <li><b>功能擴充性：</b><br> 能夠增加更多的功能或模組來滿足不同的需求或場景。Python有豐富的第三方套件和模組可以選擇，非常適合進行AI開發。</li>
+                </ol>
+            </div>
+        </div>
+        <!-- 產品特色end -->
+        <br>
+
+        <!-- 產品特色Start -->
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container quote px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 pe-lg-0">
+                            <div class="section-title text-start">
+                                <h1 class="display-5 mb-4">產品特色</h1>
+                            </div>
+                            <p class="mb-4 pb-2">
+                                <div><img src="/static/img/service/S_ERP/security.png" alt="" width="50">　私域數據中台</div>
+                                <div><img src="/static/img/service/S_ERP/security.png" alt="" width="50">　複合資訊平台</div>
+                                <div><img src="/static/img/service/S_ERP/security.png" alt="" width="50">　主動追蹤能力</div>
+                                
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="../static/img/service/service_integrate_1.jpg" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 產品特色End -->
+        <br>
+
+        <!-- 我們協助您數位轉型Start -->
+        <div style="margin-left: 15%; margin-right: 15%;">
+            <h3 style="color: brown;">02. 我們協助您數位轉型</h3>
+            
+            <p>「數位轉型」是指企業利用數位技術，來改善或創新其產品、服務、流程或商業模式，以提高效率、競爭力和客戶滿意度，進而帶動業務與業績的成長。</p>
+            <p>但數位轉型並非易事，Mckinsey 的研究顯示，不同產業和規模的企業，數位轉型的成功率相差甚遠。傳統產業(如石油、天然氣、建築或藥廠)只有 <b>4%～11%</b> 的成功率，高科技產業(如半導體、軟體設計或多媒體)也不到 <b>26%</b>。</p>
+            <p>令人意外的，小企業（少於 100 員工）的成功率是大企業（超過五萬員工）的 <b>2.7</b> 倍。 可見數位轉型的推動與取得成效，有比技術更為重要的關鍵！</p>
+
+
+            <h6>(1) 成功案例</h6>
+            <p>我們的產品設計人Luke，正是藉由過往成功經驗，來開發本系統：</p>
+            <ul>
+                <li><b>光通訊產業：</b> 取得國外領導廠商的訂單，促使專案由虧轉盈。</li>
+                <li><b>光電製造業：</b> 改善企業流程與系統漏洞，促使庫存水位下降、周轉率上升。</li>
+                <li><b>資訊電子業：</b> 建置知識管理系統，促使產品開發週期下降40%，利潤提升10%。</li>
+            </ul>
+
+            <h6>(2) 影響因子</h6>
+            <p>成功的方式總是有跡可循。 我們為您梳理了關鍵的影響因子，並代入到我們開發的系統中，為您的成功奠定穩固的基石。</p>
+            <ol>
+                <li>管理團隊清晰的闡述了公司改變的脈絡（3.1x）</li>
+                <li>使用數位工具讓企業的資訊流通能更快速（2.1x）</li>
+                <li>提供給員工或是合作夥伴自助式數位系統的使用（2.0x）</li>
+                <li>高階管理者營造出改變的重要性（1.9x）</li>
+                <li>確保不同部門中關鍵的角色的合作與溝通（1.8x）</li>
+                <li>因應新數位科技的應用來重製SOP（1.8x）</li>
+                <li>高階領導者鼓勵員工嘗試新的方案（1.7x）</li>
+                <li>關鍵職位的人鼓勵員工去挑戰過去的工作方法（1.7x）</li>
+                <li>關鍵職位的人更主動發起改變計畫（1.6x）</li>
+                <li>高階領導者確保不同部門間的合作（1.6x）</li>
+            </ol>
+            
+            <p>我們相信科學化與人性化的系統，才是您邁向成功的不二法門。</p>
+            <p>iSeinTech 與您共創更美好的未來！</p>
+            
+        </div>
+        <!-- 我們協助您數位轉型End -->
+        <br>
+
+        <!-- 洽詢Start -->
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container quote px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="../static/img/quote.jpg" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 pe-lg-0">
+                            <div class="section-title text-start">
+                                <h1 class="display-5 mb-4">產品洽詢</h1>
+                            </div>
+                            <p class="mb-4 pb-2">
+                                <div>聯絡： Luke</div>
+                                <div>電話： 0980-589635</div>
+                                <div>信箱： iseintech.service@gmail.com</div>
+                                <div><a href="https://line.me/R/ti/p/%40ezp7681g"><img height="36" border="0" alt="加入好友" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"></a></div>                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 洽詢End --> 
+        
+        <!-- 常見問題start -->
+        <div style="margin-left: 15%; margin-right: 15%;">
+            <h3 style="color: brown;">03. 常見問題</h3>
+            <div>
+                <p>我們將客戶常見的問題進行彙整，提供您參考。 如果您有任何進一步的問題，請讓我們有機會與您討論與探索合適的解決方案。</p>
+
+                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="false" aria-controls="q1">
+                    Q1. 資訊系統導入的費用？
+                </button>
+                <div class="collapse" id="q1">
+                    <p>新資訊系統的導入不僅涉及到軟體本身的費用，還有其他的成本和收益要考慮。</p>
+
+                    <p><b>(1) 有形費用</b></p> 
+                    <p>這些是可以明確計算出來的費用，包括：</p>
+                    <ol>
+                        <li><b>新資訊軟體本身的採購費用：</b> 這取決於您選擇的資訊系統廠商、系統規模、功能模組、人數限制等因素。一般來說，傳統的買斷版資訊系統費用大約在數十萬到數百萬不等，而雲端資訊系統(ERP)則是以訂閱模式收費，每個月或每年支付一定的費用。</li>
+                        <li><b>新資訊系統的導入費用：</b> 這包括了顧問費、設定費、實施費、教育訓練費等。顧問費通常以顧問人數與服務天數計費，一般行情為一位顧問每天收費$5,000-$24,000元左右。設定費、實施費和教育訓練費則視各個資訊系統廠商而定，可能會有不同的收費方式和標準。</li>
+                        <li><b>新資訊系統的維護合約費用：</b> 這是在資訊系統導入後每年要支付的費用，通常是以購買軟體成交價的一定比例計算，大約在10%到20%之間。維護合約通常包含了系統的電話諮詢、遠端連線服務、系統當機或無法使用的即時處置、系統版本更新等。</li>
+                        <li><b>新資訊系統的硬體設備和相關軟體的採購和安裝費用：</b> 這主要是針對傳統的在地佈署的系統，因為需要建置伺服器主機、作業系統、資料庫、防毒軟體和防火牆等。雲端系統則不需要這些成本，因為所有的硬體和軟體都由新資訊廠商提供和管理。</li>
+                    </ol>
+                    
+                    <p><b>(2) 無形費用</b></p> 
+                    <p>系統導入時，會有些難以量化或估算出來的費用，包括：</p>
+                    <ol>
+                        <li><b>過程中可能造成的業務中斷或延遲：</b> 這可能會影響到公司的生產力、客戶滿意度、市場競爭力等。</li>
+                        <li><b>使用者抗拒或不適應：</b> 這可能會影響到公司的員工士氣、工作效率、流程改善等。</li>
+                        <li><b>需要的額外的客製化或擴充功能：</b> 這可能會增加新資訊系統的複雜度和維護成本，也可能會影響到系統的穩定性和安全性。</li>
+                    </ol>
+
+                    <p>iSeinTech在電子製造業、光電光學元件、半導體業、通訊機械器材、化學化工製造業、金屬加工..等，都有豐富的經營管理經驗，能助您務實解決經營管理上的問題。</p>
+                </div>
+                <br>
+
+                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+                    Q2. 舊系統與新系統如何切換或併行？
+                </button>
+                <div class="collapse" id="q2">
+                    <p>新舊系統的切換或併行會影響企業的營運效率和資料品質。一般來說，有三種常見的方法：</p>
+                    <ul>
+                        <li><b>一次性切換：</b><br> 在預定時間點，一次性地將所有資料和業務流程從舊系統轉移到新系統，並停用舊系統。這種方法快速簡單，但風險高，如果新系統有問題，可能會造成業務中斷或資料丟失，而且無法回退。</li>
+                        <li><b>分階段切換：</b><br> 按照模組、部門、地區等劃分，逐步地將資料和業務流程從舊系統轉移到新系統，直到全部完成。這種方法可以減少風險，並及時發現和解決問題，但複雜耗時，而且需要在新舊系統之間建立良好的介面和同步機制。</li>
+                        <li><b>平行運行：</b><br> 在一段時間內，同時使用新舊系統，並對比兩者的資料和業務流程的一致性和準確性，直到確認新系統可以正常運行後，再停用舊系統。這種方法可以保證資料和業務流程的完整性和可靠性，但成本高、效率低、工作量大，而且可能會造成資料和業務流程的重複或衝突。</li>
+                    </ul>
+                    <p>您可以根據您的企業規模、需求、預算和風險承受能力，選擇最適合您的方法。此外，我們更建議以產品專案的形式來啟動系統切換，讓企業在導入新系統時，也開始進行數位轉型。</p>
+                </div>
+                <br>
+
+                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+                    Q3. 舊系統升級與新系統導入，該如何評估？
+                </button>
+                <div class="collapse" id="q3">
+                    <!-- <p>企業升級資訊系統的原因有兩個： <b>過時的技術</b>和<b>業務持續發展</b>。</p>
+                    <p>當企業的營運成本逐漸升高，既有的作業流程與資訊系統，無法再協助企業降低成本、提供實時數據可視性或輔助經營決策與管理。</p> -->
+
+                    <p>企業選擇升級ERP系統或導入新的資訊系統，我們建議您由商業與經營的角度出發，優先評估下面兩個問題：</p>
+                    <ol>
+                        <li>您的企業業務需求是什麼？</li>
+                        <li>現有資訊系統對業務的影響又是什麼？</li>
+                    </ol>
+
+                    <h6>(1) 升級的優勢：</h6>
+                    <p>升級過程比較快、對業務的干擾比較小。理想情況下，您可以保留ERP系統中已有的系統集成和定制，不需要太過擔心使用者學習瓶頸，也不需要尋找新的軟體系統供應商（如果您對當前ERP供應商滿意的話）。同樣，如果您的業務團隊很滿意現有系統，那麼升級將降低重新培訓團隊的難度。</p>
+                    
+                    <h6>(2) 導入新系統的好處： </h6>
+                    <p>許多企業購買新ERP系統後實現了技術飛躍，因為不同供應商會針對某個領域提供創新，或許這些創新就適用於您的產業。比起直接升級現有系統，遷移到新的ERP平台可以提高流程效率，抓住更多業務機會。此外，如果進行了企業併購，您可以將兩個老舊的獨立系統全部更換為一個統一的新系統，降低企業運營複雜性，並增強兩個業務部門之間的協作。</p>
+
+                    <h6>(3) 我們的方案： </h6>
+                    <p>除了ERP系統商的方案外，我們提供您第三種的選擇： <b>資訊中台</b>。資訊系統的目的是紀錄和傳遞訊息，並協助業務的順利進行。公司會有不同的產品線，並通常有不同的作業流程和商業機密的需求，需要資訊系統客製化的服務。因此，iSeinTech開發了企管級的專案系統，建置在ERP的前端，讓專案團隊或各個BU事業群，能根據業務需求調整資訊系統，並保持後端財務的一致性和正確性。</p>
+                </div>
+                <br>
+
+                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
+                    Q4. 預算不夠時，該如何進行？
+                </button>
+                <div class="collapse" id="q4">
+                    <p>導入新的資訊系統是一項重大的投資，需要考慮各種成本。如果您的預算有限，您可以參考以下幾個建議：</p>
+                    <ol>
+                        <li><b>分析需求和目標：</b><br> 先確定您想要達成什麼效果，解決什麼問題，改善什麼流程。這樣可以選擇最適合您的資訊系統，避免浪費資源。</li>
+                        <li><b>比較方案和供應商：</b><br> 市場上有許多不同的資訊系統方案和供應商，要根據功能、規模、價格和服務品質，找出最符合您預算的最佳選擇。您可以參考一些網路上的資源，如[中小企業如何導入資訊系統]。</li>
+                        <li><b>採用雲端或混合模式：</b><br> 雲端或混合模式的資訊系統可以減少硬體、安裝、升級和維護的成本和負擔。您可以利用雲端服務提供商的專業和資源，保證系統的安全性、可靠性和效能。您也可以靈活地調整雲端服務的規模和費用。</li>
+                        <li><b>尋求專業的協助：</b><br> 如果您沒有足夠的內部人員或技能來執行導入工作，您可能需要尋求專業的協助。您可以選擇一個有經驗、可信賴且符合您預算的資訊系統供應商或顧問，協助您完成導入工作。他們可以提供有效的分析、建議、訓練和支援，並與您保持良好的溝通和合作。</li>
+                    </ol>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!-- 常見問題end -->
+        <br>
+
+    </div>
+    <!-- ***** 產品展示End ***** -->
+    
+{% endblock %}

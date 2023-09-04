@@ -1,0 +1,280 @@
+{% extends 'base.html' %}
+
+{% block title %}產品與技術服務{% endblock %}
+
+{% block content %}
+    <!-- 頁面抬頭 Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">產品與技術服務</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('views.index') }}">首頁</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">產品與技術服務</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- 頁面抬頭 End -->
+
+    <div>
+        <!-- 產品Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-5 mb-5">我們的產品線</h1>
+                </div>
+                <div class="row g-4">
+                    <!-- 網站設計 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="../static/img/service-1.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">網站設計</h4>
+                                <p>我們提供靜態與動態的網站設計服務，並可根據您的需求與預算，為您選擇最適當的方式開啟您的生意。</p>
+                                <a class="fw-medium" href="{{ url_for('views.web_design') }}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 企業資訊系統 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="../static/img/service-2.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">企業資訊系統</h4>
+                                <p>資訊的傳遞與整合，是企業運行的關鍵。我們提供在ERP前端的設計服務，讓您花小錢來開始數位轉型。</p>
+                                <a class="fw-medium" href="{{ url_for('views.erp') }}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 影像安防偵測 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="../static/img/service-3.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">影像安防偵測</h4>
+                                <p>居家或營業場所的安全，是您財產的根基。我們提供專業的影像偵測技術與平台，保障您生命與財產的安全。</p>
+                                <a class="fw-medium" href="{{ url_for('views.dynamic_detection') }}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 缺陷檢測系統AOI -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="../static/img/service-4.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">缺陷檢測系統AOI</h4>
+                                <p>來料與出貨的品質，決定產品最後的利潤。我們提供低價快速的缺陷檢測方式，協助您取得更好的品質。</p>
+                                <a class="fw-medium" href="{{ url_for('views.AOI') }}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 光學盤點系統 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="../static/img/service-5.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">光學盤點系統</h4>
+                                <p>數量的清點，是每件事的開始與結束。我們開發出先進的影像辨識系統，讓您在任何地方，自動幫您統計所有的數量。</p>
+                                <a class="fw-medium" href="{{ url_for('views.Optical_Inventory') }}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI預測系統 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="../static/img/service-6.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">AI預測系統</h4>
+                                <p>分析與預測，是聰明的您優於其他人的地方。我們提供標準化的AI模型，讓您輕鬆的進行機器學習與預測。</p>
+                                <a class="fw-medium" href="{{ url_for('views.AI_Prediction') }}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <!-- 產品End -->
+
+
+        <!-- 產品共同特點 -->
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container quote px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div style="padding-left: 20%;">
+                            <div class="section-title text-start">
+                                <h1 class="display-5 mb-4">產品共同特點</h1>
+                            </div>
+                            <div class="mb-4 pb-2">
+                                <div>
+                                    <h5>(1) 不需要</h5>
+                                    <i class="fa fa-ban" style="color: red;"></i> 不需要高額的預算<br>
+                                    <i class="fa fa-ban" style="color: red;"></i> 不需要客戶有強大的資訊能力<br>
+                                    <i class="fa fa-ban" style="color: red;"></i> 不需要長時間的操作學習
+                                </div>
+                                <br>
+                        
+                                <div>
+                                    <h5>(2) 只需要</h5>
+                                    <i class="fa fa-thumbs-up" style="color: green;"></i> 少量多樣的需求<br>
+                                    <i class="fa fa-thumbs-up" style="color: green;"></i> 玩玩新玩具的輕鬆心態<br>
+                                </div>
+                                <br>
+
+                                <p>我們相信 <b>"One Touch"</b><i class="fa fa-hand-pointer me-3" style="color: gold;"></i>才是最好的設計！ 並以 <b>"One Touch"</b><i class="fa fa-hand-pointer me-3" style="color: gold;"></i>為核心精神，為您量身打造最簡易方便的自動化方案。</p>
+                                <p>我們是您自動化與數位轉型的最佳夥伴！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="../static/img/about.jpg" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 系統的整合Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-5 mb-5">系統的整合</h1>
+                </div>
+                <p align="center">iSeinTech提供您從自動化設備到AI系統，一體式開發的完整體驗。</p>
+                <!-- 圖像版權宣告：image皆由SD生成 -->
+                <div class="row g-4">
+                    <!-- 資訊系統 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <div class="overflow-hidden position-relative">
+                                <img class="img-fluid" src="../static/img/service/service_integrate_1.jpg" alt="">
+                            </div>
+                            <div class="text-center border border-5 border-light border-top-0 p-4">
+                                <h5 class="mb-0">資訊系統</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 影像辨識 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <div class="overflow-hidden position-relative">
+                                <img class="img-fluid" src="../static/img/service/service_integrate_2.jpg" alt="">
+                            </div>
+                            <div class="text-center border border-5 border-light border-top-0 p-4">
+                                <h5 class="mb-0">影像辨識</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 自動化技術 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <div class="overflow-hidden position-relative">
+                                <img class="img-fluid" src="../static/img/service/service_integrate_3.jpg" alt="SD生成">
+                            </div>
+                            <div class="text-center border border-5 border-light border-top-0 p-4">
+                                <h5 class="mb-0">自動化技術</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AI人機協作 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <div class="overflow-hidden position-relative">
+                                <img class="img-fluid" src="../static/img/service/service_integrate_4.jpg" alt="">
+                            </div>
+                            <div class="text-center border border-5 border-light border-top-0 p-4">
+                                <h5 class="mb-0">AI人機協作</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 團隊End -->
+
+
+        <!-- 洽詢Start -->
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container quote px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="../static/img/quote.jpg" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 pe-lg-0">
+                            <div class="section-title text-start">
+                                <h1 class="display-5 mb-4">產品洽詢</h1>
+                            </div>
+                            <p class="mb-4 pb-2">
+                                <div>聯絡： Luke</div>
+                                <div>電話： 0980-589635</div>
+                                <div>信箱： iseintech.service@gmail.com</div>
+                                <div><a href="https://line.me/R/ti/p/%40ezp7681g"><img height="36" border="0" alt="加入好友" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"></a></div>                            
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 洽詢End --> 
+
+        <!-- 客戶感言 -->
+        <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-5 mb-5">客戶回饋</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
+                        <div class="testimonial-text text-center p-4">
+                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                            <h5 class="mb-1">客戶名稱</h5>
+                            <span class="fst-italic">職業</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
+                        <div class="testimonial-text text-center p-4">
+                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                            <h5 class="mb-1">客戶名稱</h5>
+                            <span class="fst-italic">職業</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
+                        <div class="testimonial-text text-center p-4">
+                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                            <h5 class="mb-1">客戶名稱</h5>
+                            <span class="fst-italic">職業</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- 客戶感言End -->
+    </div>
+{% endblock %}

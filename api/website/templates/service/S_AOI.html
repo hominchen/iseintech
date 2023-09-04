@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %}缺陷檢測系統AOI{% endblock %}
+
+{% block content %}
+    <!-- 頁面抬頭Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">缺陷檢測系統AOI</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('views.index') }}">首頁</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('views.service') }}">產品與服務</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">缺陷檢測系統AOI</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- 頁面抬頭End -->
+
+
+    <!-- 產品展示start -->
+    <div>
+        <!-- Youtube影片 -->
+
+        <!-- 大綱開場start -->
+        <div style="margin-left: 15%; margin-right: 15%;">
+            <p>您是否正在尋找一款適合您的製造業或中小企業或大宗物料的代理經銷商的光學檢測系統？您是否希望能夠以合理的價格，獲得高品質和高效率的檢測服務？您是否想要擁有一款靈活和易於操作的檢測系統，可以根據您的需求和條件進行客製化和擴展？</p>
+            <p>如果您的答案是肯定的，那麼我們的產品就是您的最佳選擇！</p>
+        </div>
+        <!-- 大綱開場end -->
+        <br>
+
+        <!-- 產品特色start -->
+        <div style="margin-left: 15%; margin-right: 15%;">
+            <h3 style="color: brown;">產品特色</h3>
+            <div>
+                <p>我們的產品是一款基於AI深度學習技術的光學檢測系統，具有以下幾項核心競爭力：</p>
+                <ol>
+                    <li><b>價格與品質的平衡：</b><br> 
+                        我們的產品採用最先進的影像處理和分析技術，可以準確地檢測出各種物體表面或內部的瑕疵，如刮傷、污染、裂紋、缺陷等。我們的產品也採用最優化的設計和製造工藝，可以降低成本和節省資源。我們的產品可以幫助您提高產品品質和良率，減少廢料和返修，增加利潤和競爭力。</li>
+                    <li><b>自由的檢測空間：</b><br>
+                        我們的產品不受物體大小、形狀、顏色、材質等限制，可以適用於各種不同的產業和製程。我們的產品也不需要固定的照明和攝影位置，可以根據實際情況調整最佳的視角和距離。我們的產品可以讓您自由地選擇在線或離線、2D或3D、單面或雙面等多種檢測模式。</li>
+                    <li><b>使用python擴展性好：</b><br>
+                        我們的產品使用python語言開發，具有高度的可讀性和可移植性。我們的產品也提供了豐富的API和文檔，方便您根據自己的需求和喜好，進行功能增加或修改。我們的產品可以讓您靈活地適應市場變化和客戶要求。</li>
+                    <li><b>可搭配web遠端操作：</b><br>
+                        我們的產品支援web介面，可以讓您通過網路或手機等設備，隨時隨地查看和控制您的檢測系統。我們的產品也支援雲端儲存和分析，可以讓您輕鬆地管理和分享您的檢測數據和結果。我們的產品可以讓您方便地進行遠端監控和協作。</li>
+                    <li><b>有自主開發的企業資訊系統：</b><br>
+                        我們的產品配備了自主開發的企業資訊系統，可以讓您將您的檢測數據和結果與其他設備和系統整合，如ERP、MES、CRM等。我們的產品也提供了多種報表和圖表，以及統計分析和品質控制等功能，可以讓您有效地進行數據挖掘和決策支援。我們的產品可以讓您全面地提升您的企業管理和效能。</li>
+                </ol>
+                <p>我們的產品是一款集多項優勢於一身的光學檢測系統，是您不可錯過的最佳夥伴！如果您對我們的產品有興趣，請聯絡我們，我們將為您提供最專業和最貼心的服務！</p>
+            </div>            
+        </div>
+        <br>
+
+        <!-- 洽詢Start -->
+        <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+            <div class="container quote px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 pe-lg-0">
+                            <div class="section-title text-start">
+                                <h1 class="display-5 mb-4">產品洽詢</h1>
+                            </div>
+                            <p class="mb-4 pb-2">
+                                <div>聯絡： Luke</div>
+                                <div>電話： 0980-589635</div>
+                                <div>信箱： iseintech.service@gmail.com</div>
+                                <div><a href="https://line.me/R/ti/p/%40ezp7681g"><img height="36" border="0" alt="加入好友" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"></a></div>                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 洽詢End --> 
+
+
+    </div>
+    <!-- 產品展示End -->
+
+{% endblock %}
