@@ -45,10 +45,14 @@ def AI_Prediction():
 @app.route('/free_func')
 def free_func():
     return render_template('free_func.html')
-# 03-1.網站設計
-@app.route('/free_func/promote_word')
+# 04-1.網站設計
+@app.route('/free_func/promote_word', methods=['GET', 'POST'])
 def promote_word():
-    return render_template('service/promote_word.html')
+    if request.method == 'POST':
+        total_prompt = request.form.getlist('mycheckbox')
+        return render_template('free_func/promote_word.html',
+                total_prompt=total_prompt)
+    return render_template('free_func/promote_word.html')
 
 # 05.聯絡我們
 @app.route('/contact')
