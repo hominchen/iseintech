@@ -41,7 +41,16 @@ def Optical_Inventory():
 def AI_Prediction():
     return render_template('service/S_AIPrediction.html')
 
-# 04.聯絡我們
+# 04.線上服務
+@app.route('/free_func')
+def free_func():
+    return render_template('free_func.html')
+# 03-1.網站設計
+@app.route('/free_func/promote_word')
+def promote_word():
+    return render_template('service/promote_word.html')
+
+# 05.聯絡我們
 @app.route('/contact')
 def contact():
     return render_template('contact.html')

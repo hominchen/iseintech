@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}免費功能{% endblock %}
+
+{% block content %}
+    <!-- 頁面抬頭 Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">免費功能</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{{ url_for('index') }}">首頁</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">免費功能</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- 頁面抬頭 End -->
+
+    <div>
+        <!-- 產品Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-5 mb-5">線上免費功能</h1>
+                </div>
+                <div class="row g-4">
+                    <!-- AI繪圖關鍵字 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="../static/img/service-1.jpg" alt="">
+                            </div>
+                            <div class="p-4 text-center border border-5 border-light border-top-0">
+                                <h4 class="mb-3">AI繪圖關鍵字</h4>
+                                <p>繪圖關鍵字生成</p>
+                                <a class="fw-medium" href="{{ url_for('promote_word') }}">立刻使用<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>            
+            </div>
+        </div>
+        <!-- 產品End -->
+    </div>
+
+{% endblock %}
